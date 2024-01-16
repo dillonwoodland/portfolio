@@ -9,17 +9,23 @@ import { Router } from '@angular/router';
 export class NavigationComponent {
   constructor(private router: Router) { }
 
+  activeNavItem: string = 'home';
+
   homeClicked() {
+    this.activeNavItem = 'home';
     this.router.navigate(['/']);
   }
 
   projectsClicked() {
+    this.activeNavItem = 'projects';
     this.router.navigate(['Projects']);
   }
   contactClicked() {
+    this.activeNavItem = 'contact';
     this.router.navigate(['Contact']);
   }
   aboutClicked() {
+    this.activeNavItem = 'about';
     this.router.navigate(['About']);
   }
 }
