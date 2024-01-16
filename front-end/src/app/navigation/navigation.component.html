@@ -1,24 +1,21 @@
-<div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
-    <div class="bg-dark p-4">
-        <h5 class="text-body-emphasis h4">Collapsed content</h5>
-        <span class="text-body-secondary">Toggleable via the navbar brand.</span>
-    </div>
-</div>
 <nav class="navbar navbar-expand-md">
     <div class="container-fluid position-relative">
         <div class="d-none d-md-block expanded-menu">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page">Home</a>
+                    <a class="nav-link" [class.active]="activeNavItem === 'home'" (click)="homeClicked()"
+                        aria-current="page">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link">Projects</a>
+                    <a class="nav-link" [class.active]="activeNavItem === 'projects'"
+                        (click)="projectsClicked()">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link">Contact</a>
+                    <a class="nav-link" [class.active]="activeNavItem === 'contact'"
+                        (click)="contactClicked()">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link">About</a>
+                    <a class="nav-link" [class.active]="activeNavItem === 'about'" (click)="aboutClicked()">About</a>
                 </li>
             </ul>
         </div>
@@ -27,22 +24,23 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse collapse-end" tabindex="-1" id="collapseNavbar" aria-labelledby="collapseNavbarLabel">
-            <div class="collapse-header">
-                <h5 class="collapse-title" id="collapseNavbarLabel">Menu</h5>
-            </div>
             <div class="collapse-body">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <ul class="navbar-nav d-block d-md-none justify-content-end flex-grow-1 pe-3">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page">Home</a>
+                        <a class="nav-link active" [class.active]="activeNavItem === 'home'" (click)="homeClicked()"
+                            aria-current="page">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link">Projects</a>
+                        <a class="nav-link" [class.active]="activeNavItem === 'projects'"
+                            (click)="projectsClicked()">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link">Contact</a>
+                        <a class="nav-link" [class.active]="activeNavItem === 'contact'"
+                            (click)="contactClicked()">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link">About</a>
+                        <a class="nav-link" [class.active]="activeNavItem === 'about'"
+                            (click)="aboutClicked()">About</a>
                     </li>
                 </ul>
             </div>

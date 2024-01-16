@@ -1,0 +1,26 @@
+* {
+    background-color: black;
+    color: white;
+}
+
+.nav-link.active {
+    color: aquamarine
+}
+
+.nav-link:hover {
+    color: aquamarine;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+button {
+    background-color: aquamarine;
+}
+
+.navbar-toggler-icon {
+    background-color: aquamarine;
+}
+
+.d-md-block ul li {
+    margin-right: 50px;
+}
