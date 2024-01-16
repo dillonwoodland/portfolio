@@ -20,3 +20,7 @@ button {
 .navbar-toggler-icon {
     background-color: aquamarine;
 }
+
+.d-md-block ul li {
+    margin-right: 50px;
+}
