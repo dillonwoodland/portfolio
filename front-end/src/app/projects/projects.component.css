@@ -1,0 +1,18 @@
+.title {
+    font-size: 30px;
+    color: rgb(29, 185, 133);
+}
+
+li {
+    font-size: 20px;
+}
+
+li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.note {
+    font-weight: bold;
+    background-color: aquamarine;
+}
