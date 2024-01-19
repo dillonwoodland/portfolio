@@ -1,3 +1,15 @@
+.back-button {
+    background-color: aquamarine;
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+.back-button:hover {
+    cursor: pointer;
+    background-color: black;
+    color: aquamarine;
+}
+
 .title {
     font-size: 40px;
     color: rgb(29, 185, 133);
@@ -5,4 +17,14 @@
 
 .description {
     font-size: 25px;
+}
+
+.tech-stack {
+    height: 50px;
+}
+
+.tech-stack-label {
+    font-size: 20px;
+    color: rgb(29, 185, 133);
+    text-decoration: underline;
 }
