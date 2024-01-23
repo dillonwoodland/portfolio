@@ -28,3 +28,11 @@
     color: rgb(29, 185, 133);
     text-decoration: underline;
 }
+
+div span {
+    font-weight: bold;
+}
+
+.small-screen img {
+    width: 360px;
+}
